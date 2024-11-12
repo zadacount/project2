@@ -1,0 +1,100 @@
+/* Styling for the Top Container */
+#topContainer {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+#logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  margin-top: 20px;
+  width: 70px;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+#siteName, #siteName2 {
+  font-size: 2em;
+  color: #333;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+/* Main container for the watchlist page */
+#watchlistContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual movie card styling */
+.movie-card {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image styling for movie posters */
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Movie information styling */
+.movie-info {
+  padding: 10px;
+}
+
+/* Title styling */
+.movie-info h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Styling for the remove button */
+.movie-info button {
+  padding: 10px 17px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #da6561; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.movie-info button:hover {
+  background-color: #c9302c; 
+}
+
+/* Styling for the current page indicator */
+.current-page {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #ff6600; 
+  margin-left: 15px;
+}

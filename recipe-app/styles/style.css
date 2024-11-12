@@ -1,0 +1,287 @@
+/* Styling for the top container */
+#topContainer {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+#logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  margin-top: 30px;
+  width: 70px;
+  margin-left: 50px;
+  margin-right: 25px;
+}
+
+#siteName {
+  font-size: 2em;
+  color: #333;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+/* Center container for greeting message and search */
+#centerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+}
+
+#centerContainer h2 {
+  font-size: 3em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Centering the search form and adding smooth borders */
+#searchForm {
+  display: flex;
+  width: 50%;
+  max-width: 500px;
+  position: relative;
+}
+
+#ingredientInput {
+  padding: 12px;
+  font-size: 22px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 100%;
+}
+
+#ingredientInput::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 10px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #181717;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0000007e;
+}
+
+/* Autocomplete suggestions styling */
+#suggestions {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  max-height: 100px;
+  overflow-y: auto;
+  width: 100%;
+  top: 60px;
+  z-index: 10;
+  border-radius: 0 0 10px 10px;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styling for the Favorites link */
+#favoritesLink {
+  margin-left: 100px;
+  font-size: 2.1em;
+  color: #181717;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 18px;
+  transition: color 0.3s;
+}
+
+#favoritesLink.active {
+  text-decoration: underline;
+}
+
+#favoritesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styling for the results page container */
+#recipesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styling for each recipe card */
+.recipe-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Fixed height for title to align buttons */
+.recipe-card h3 {
+  font-size: 1.3em;
+  color: #333;
+  padding: 5px 10px;
+  margin: 0;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.recipe-card p {
+  font-size: 0.9em;
+  color: #777;
+  margin: 10px 0;
+}
+
+/* Container for buttons at the bottom */
+.recipe-card .button-container {
+  margin-top: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button styling inside recipe cards to match search button */
+.recipe-card button {
+  background-color: #181717;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 20px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+.recipe-card button:hover {
+  background-color: #0000007e;
+}
+
+.recipe-card button:active {
+  background-color: #000000a0;
+}
+
+/* Main container for the recipe details */
+#recipeDetailsContainer {
+  display: flex;
+  max-width: 1700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the recipe image on the left */
+#recipeImage {
+  flex: 1;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+#recipeImage img {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+}
+
+/* Styling for the content on the right */
+#recipeContent {
+  flex: 2;
+}
+
+#recipeContent h2 {
+  font-size: 2.4em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+#recipeContent h3 {
+  font-size: 1.8em;
+  color: #302d2d;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#recipeContent ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #666;
+}
+
+#recipeContent p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+}
+
+#recipeContent .nutrition-info {
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Notification styling */
+#notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#notification.show {
+  opacity: 1;
+}

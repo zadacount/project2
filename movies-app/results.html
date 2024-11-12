@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - Movielogy</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Top Container with Logo, Watchlist Link, and Sort Dropdown -->
+  <header id="topContainer">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <div id="logoContainer">
+        <img src="assets/logo.png" alt="Movielogy Logo" id="logo">
+        <h2 id="siteName">Movielogy</h2>
+      </div>
+    </a>
+    <div id="headerLinks">
+      <a href="watchlist.html" id="watchlistLink">Watchlist</a>
+      <select id="sortSelect">
+        <option value="popularity.desc">Sort by Popularity</option>
+        <option value="release_date.desc">Sort by Release Date</option>
+        <option value="vote_average.desc">Sort by Rating</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Results Container for Movies -->
+  <div id="movieContainer"></div>
+  <div id="notification" class="hidden">Added to Watchlist!</div>
+
+
+  <script src="scripts/results.js"></script>
+</body>
+</html>ы

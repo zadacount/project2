@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipology</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Top container with logo and site name -->
+  <header id="topContainer">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <div id="logoContainer">
+          <img src="assets/logo.png" alt="Recipology Logo" id="logo">
+          <h2 id="siteName">Recipology</h2>
+      </div>
+    </a>    
+    <a href="favorites.html" id="favoritesLink">Favorites</a>
+  </header>  
+
+  <!-- Centered search section with greeting message and search form -->
+  <div id="centerContainer">
+    <h2> Discover delicious recipes with Recipology! </h2>
+    <form id="searchForm">
+      <input type="text" id="ingredientInput" placeholder="Enter ingredient" required autocomplete="off">
+      <div id="suggestions"></div> <!-- Autocomplete suggestions will appear here -->
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- Container where recipe cards will be displayed -->
+  <div id="recipesContainer"></div>
+
+  <!-- JavaScript file for the application's logic -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>

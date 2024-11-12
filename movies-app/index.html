@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movielogy</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- Header with logo and site name -->
+  <header id="topContainer">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <div id="logoContainer">
+        <img src="assets/logo.png" alt="Movielogy Logo" id="logo">
+        <h2 id="siteName">Movielogy</h2>
+      </div>
+    </a>    
+    <a href="watchlist.html" id="watchlistLink">Watchlist</a>
+  </header>  
+
+  <!-- Centered search section -->
+  <div id="centerContainer">
+    <h2> Explore and discover movies with Movielogy! </h2>
+    <form id="searchForm">
+      <input type="text" id="titleInput" placeholder="Search for a movie..." required autocomplete="off">
+      <div id="suggestions"></div> <!-- Autocomplete suggestions -->
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- Movies results container -->
+  <div id="movieContainer"></div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

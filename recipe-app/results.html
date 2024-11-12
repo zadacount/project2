@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Results</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Header with back navigation or logo -->
+  <header id="topContainer">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <div id="logoContainer">
+          <img src="assets/logo.png" alt="Recipology Logo" id="logo">
+          <h2 id="siteName">Recipology</h2>
+      </div>
+    </a>    
+    <a href="favorites.html" id="favoritesLink">Favorites</a>
+  </header>  
+
+  <!-- Container for displaying recipe results -->
+  <div id="recipesContainer"></div>
+
+  <!-- JavaScript file for displaying search results -->
+  <script src="scripts/results.js"></script>
+  <div id="notification" class="hidden"></div>
+  <div id="recipesContainer"></div>
+</body>
+</html>

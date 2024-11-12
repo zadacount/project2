@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherology - Weather Details</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="top-container">
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div id="logoContainer">
+                <img src="assets/logo.png" alt="Weatherology Logo" id="logo">
+                <h2 id="siteName">Weatherology</h2>
+            </div>
+        </a>
+        <button class="unit-toggle" onclick="toggleUnits()">Switch to °F</button>
+    </div>
+
+    <section id="city-name-section">
+        <h1 id="city-name">Loading...</h1>
+    </section>
+
+    <section id="weather-overview">
+        <div id="current-weather">
+            <h2>Current Weather</h2>
+            <div id="weather-details">
+                <div id="weather-icon"></div>
+                <div id="weather-info">
+                    <p id="temperature"></p>
+                    <p id="conditions"></p>
+                    <p id="humidity"></p>
+                    <p id="wind"></p>
+                </div>
+            </div>
+            <button onclick="getLocationWeather()" class="location-button">Get Weather for My Location</button>
+        </div>
+    </section>
+
+    <section id="forecast">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-details"></div>
+    </section>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/geolocation.js"></script>
+</body>
+</html>
